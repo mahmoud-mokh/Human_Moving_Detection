@@ -2,18 +2,18 @@
 
 A supervised multiclass machine learning project that predicts human physical activities using smartphone accelerometer and gyroscope sensor features.
 
-## 📌 Project Overview
+##  Project Overview
 
 This project builds a machine learning pipeline for **Human Activity Recognition (HAR)** using the UCI Human Activity Recognition Using Smartphones dataset.
 
 The goal is to classify each observation into one of six human activities based on engineered smartphone sensor features:
 
-* 🚶 Walking
-* ⬆️ Walking Upstairs
-* ⬇️ Walking Downstairs
-* 🪑 Sitting
-* 🧍 Standing
-* 🛏️ Laying
+*  Walking
+*  Walking Upstairs
+*  Walking Downstairs
+*  Sitting
+*  Standing
+*  Laying
 
 The project covers the complete machine learning workflow, including:
 
@@ -32,7 +32,7 @@ The project covers the complete machine learning workflow, including:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The project uses the **UCI Human Activity Recognition Using Smartphones Dataset**.
 
@@ -69,7 +69,7 @@ The split is performed by subject to avoid leakage between training and testing 
 
 ---
 
-## 🧠 Features
+##  Features
 
 The dataset contains **561 engineered features** derived from time-domain and frequency-domain sensor signals.
 
@@ -90,7 +90,7 @@ Each row represents a statistical summary of a **2.56-second sensor window**, ra
 
 ---
 
-## 🔍 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 The notebook performs several EDA steps to understand the dataset, including:
 
@@ -104,7 +104,7 @@ The six classes are reasonably balanced, so accuracy is a meaningful evaluation 
 
 ---
 
-## ⚙️ Preprocessing
+##  Preprocessing
 
 The feature matrix is standardized using `StandardScaler`.
 
@@ -123,7 +123,7 @@ No random row-level train/test split is performed because observations from the 
 
 ---
 
-## 🤖 Machine Learning Models
+##  Machine Learning Models
 
 Five classical machine learning algorithms are trained and compared:
 
@@ -157,7 +157,7 @@ The exact values are generated from the notebook's `comparison_df`.
 
 ---
 
-## 📉 PCA Analysis
+##  PCA Analysis
 
 Principal Component Analysis (PCA) is used to investigate the redundancy and structure of the 561-dimensional feature space.
 
@@ -175,7 +175,7 @@ However, activities within the same group overlap more strongly, particularly Si
 
 ---
 
-## 🌲 Feature Importance
+##  Feature Importance
 
 Random Forest feature importance is used to identify the engineered features that contribute most to classification.
 
@@ -191,7 +191,7 @@ These features are physically meaningful because they capture both body orientat
 
 ---
 
-## 🔎 Error Analysis
+##  Error Analysis
 
 The confusion matrix is used to investigate classification errors.
 
@@ -213,7 +213,7 @@ Laying is generally easier to distinguish because its gravity orientation differ
 
 ---
 
-## 🎯 Hyperparameter Tuning
+##  Hyperparameter Tuning
 
 The most promising models are further optimized using `GridSearchCV`.
 
@@ -241,7 +241,7 @@ The tuned model with the best cross-validation accuracy is selected as the final
 
 ---
 
-## 🏆 Final Evaluation
+##  Final Evaluation
 
 After model selection and hyperparameter tuning, the final model is evaluated once on the untouched test set.
 
@@ -260,7 +260,7 @@ This provides an unbiased estimate of the model's performance on unseen subjects
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 A typical project structure is:
 
@@ -294,7 +294,7 @@ Human-Activity-Recognition/
 
 ---
 
-## 💾 Dashboard Artifacts
+##  Dashboard Artifacts
 
 The notebook exports trained models and analysis results to the `artifacts/` directory so that the dashboard can display results without retraining the models.
 
@@ -317,7 +317,7 @@ The dashboard loads these artifacts instead of retraining the models.
 
 ---
 
-## 🖥️ Dashboard
+##  Dashboard
 
 The project includes a dashboard that summarizes the machine learning workflow and results.
 
@@ -339,7 +339,7 @@ The dashboard is intended for **visualization and demonstration**; the complete 
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Clone the repository
 
@@ -420,7 +420,7 @@ Key findings include:
 
 ---
 
-## 📚 References
+##  References
 
 **UCI Machine Learning Repository**
 
@@ -430,7 +430,7 @@ https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartph
 
 ---
 
-## 👩‍💻 Project Type
+##  Project Type
 
 **Machine Learning — Multiclass Classification**
 
